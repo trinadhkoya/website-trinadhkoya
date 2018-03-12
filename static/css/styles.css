@@ -1,0 +1,53 @@
+.navbar {
+    background-color: #FFFFFF;
+}
+
+.navbar-brand small {
+    font-family: MyriadLight, sans-serif;
+    font-size: 12px;
+}
+
+.body {
+    background-color: #F8F9FA;
+}
+
+a.navbar-brand {
+    font-family: MyriadRegular, sans-serif;
+    font-size: 25px;
+}
+
+.nav.navbar-nav.navbar-right {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-family: MyriadLight, sans-serif;
+}
+
+.navbar-default .navbar-nav > li > a:active {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ff9900;
+}
+
+.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.page-footer {
+    padding: 1em;
+}
+
+.copyright {
+    background-color: #1a252f;
+}
