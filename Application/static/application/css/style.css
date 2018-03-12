@@ -1,0 +1,64 @@
+.brand-image-nav {
+    height: 30px;
+    width: 30px;
+    align-content: center;
+    align-self: center;
+}
+
+.brand-text-nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+}
+
+.navbar.navbar-default {
+    background: #252F3D;
+    color: white;
+}
+
+.navbar-default .navbar-text {
+    color: #ffffff;
+}
+
+.navbar-brand .brand-text-nav {
+    background: #252F3D;
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    background: #252F3D;
+    color: white;
+}
+
+.brand-text-nav-links {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:active {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #ff9900;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: #ff9900;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
