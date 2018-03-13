@@ -8,34 +8,34 @@ from django.shortcuts import render
 # Create your views here.
 def index(request):
     logger.info('what is this', request)
-    return render(request, 'index.html')
+    return render(request, 'index.html', {'title': 'Welcome to Homepage - Trinadh Koya'})
 
 
 def about(request):
     print("request is", request)
 
-    return render(request, 'about.html')
+    return render(request, 'about.html', {'title': 'About - Trinadh Koya'})
 
 
 def gallery(request):
     print("request is", request)
 
-    return render(request, 'gallery.html')
+    return render(request, 'gallery.html', {'title': 'Welcome to Homepage - Trinadh Koya'})
 
 
 def contact(request):
     print("request is", request)
 
-    return render(request, 'contact.html')
+    return render(request, 'contact.html', {'title': 'Contact - Trinadh Koya'})
 
 
 def blog(request):
     print("request is", request)
 
-    return render(request, 'blog.html')
+    return render(request, 'blog.html', {'title': 'Blog - Trinadh Koya'})
 
 
 def resume(request):
     print("request is", request)
 
-    return render(request, 'resume.html')
+    return render(request, 'resume.html', {'title': 'Resume - Trinadh Koya'})
