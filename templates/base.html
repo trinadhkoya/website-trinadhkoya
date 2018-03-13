@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to home-TRINADH KOYA</title>
+    <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap-custom-style.css' %}">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
@@ -25,104 +25,55 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a href="#" class="navbar-brand">trinadhkoya</a>
+        <a href="{% url 'application:index' %}" class="navbar-brand">trinadhkoya</a>
     </div>
     <!-- Collection of nav links, forms, and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="{% url 'about' %}">About Me</a></li>
-            <li><a href="{% url 'gallery' %}">Gallery</a></li>
-            <li><a href="{% url 'resume' %}">Resume</a></li>
-            <li><a href="{% url 'blog' %}">Blog</a></li>
-            <li><a href="{% url 'contact' %}">Contact</a></li>
+            <li class="active"><a href="{% url 'application:index' %}">Home</a></li>
+            <li><a href="{% url 'application:about' %}">About Me</a></li>
+            <li><a href="{% url 'application:gallery' %}">Gallery</a></li>
+            <li><a href="{% url 'application:resume' %}">Resume</a></li>
+            <li><a href="{% url 'application:blog' %}">Blog</a></li>
+            <li><a href="{% url 'application:contact' %}">Contact</a></li>
 
         </ul>
 
     </div>
 </nav>
 
-<div class="carousel fade-carousel slide carousel-fade" data-ride="carousel" data-interval="4000" id="bs-carousel">
-    <!-- Overlay -->
 
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#bs-carousel" data-slide-to="1"></li>
-        <li data-target="#bs-carousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div class="item slides active">
-            <div class="slide-1">
-                <div class="overlay"></div>
-            </div>
-            <div class="hero">
-                <hgroup>
-                    <h1>I'm Trinadh koya</h1>
-                    <h3>Welcome to my Home</h3>
-                </hgroup>
-{#                <button class="btn btn-hero btn-lg" role="button">See all features</button>#}
-            </div>
-        </div>
-        <div class="item slides">
-            <div class="slide-2">
-                <div class="overlay"></div>
-            </div>
-            <div class="hero">
-                <hgroup>
-                    <h1>We are smart</h1>
-                    <h3>Get start your next awesome project</h3>
-                </hgroup>
-                <button class="btn btn-hero btn-lg" role="button">See all features</button>
-            </div>
-        </div>
-        <div class="item slides">
-            <div class="slide-3">
-                <div class="overlay"></div>
-            </div>
-            <div class="hero">
-                <hgroup>
-                    <h1>We are amazing</h1>
-                    <h3>Get start your next awesome project</h3>
-                </hgroup>
-                <button class="btn btn-hero btn-lg" role="button">See all features</button>
-            </div>
-        </div>
-    </div>
-</div>
-{#{% block content %}#}
-{#{% endblock %}#}
-<nav class="navbar-wrapper navbar-inverse navbar-fixed-bottom">
-    <div class="container-fluid">
-        <div>
-            <div class="navbar-header center-block">
-                <a href="#" class="navbar-brand">Get in touch</a>
-            </div>
-
-            <!-- Collection of nav links, forms, and other content for toggling -->
-            <div id="navbarCollapse" class="collapse navbar-collapse center-block">
-                <ul class="nav navbar-nav navbar-right center-block">
-
-                    <li><a href="https://www.linkedin.com/in/trinadhkoya/" target="_blank"><i
-                            class="fa fa-linkedin "></i></a>
-                    </li>
-                    <li><a href="https://www.facebook.com/trinadhkoya9" target="_blank"><i class="fa fa-facebook "></i></a>
-                    </li>
-                    <li><a href="https://github.com/trinadhkoya" target="_blank"><i class="fa fa-github "></i></a></li>
-                    <li><a href="https://www.instagram.com/trinadhkoya/" target="_blank"><i
-                            class="fa fa-instagram "></i></a></li>
-                    <li><a href="https://www.twitter.com/trinadhkoya/" target="_blank"><i
-                            class="fa fa-twitter "></i></a></li>
-
-
-                </ul>
-
-            </div>
-        </div>
-    </div>
-</nav>
+{% block body %}
+{% endblock %}
+{#<nav class="navbar-wrapper navbar-inverse navbar-fixed-bottom">#}
+{#    <div class="container-fluid">#}
+{#        <div>#}
+{#            <div class="navbar-header center-block">#}
+{#                <a href="#" class="navbar-brand">Get in touch</a>#}
+{#            </div>#}
+{##}
+{#            <!-- Collection of nav links, forms, and other content for toggling -->#}
+{#            <div id="navbarCollapse" class="collapse navbar-collapse center-block">#}
+{#                <ul class="nav navbar-nav navbar-right center-block">#}
+{##}
+{#                    <li><a href="https://www.linkedin.com/in/trinadhkoya/" target="_blank"><i#}
+{#                            class="fa fa-linkedin "></i></a>#}
+{#                    </li>#}
+{#                    <li><a href="https://www.facebook.com/trinadhkoya9" target="_blank"><i class="fa fa-facebook "></i></a>#}
+{#                    </li>#}
+{#                    <li><a href="https://github.com/trinadhkoya" target="_blank"><i class="fa fa-github "></i></a></li>#}
+{#                    <li><a href="https://www.instagram.com/trinadhkoya/" target="_blank"><i#}
+{#                            class="fa fa-instagram "></i></a></li>#}
+{#                    <li><a href="https://www.twitter.com/trinadhkoya/" target="_blank"><i#}
+{#                            class="fa fa-twitter "></i></a></li>#}
+{##}
+{##}
+{#                </ul>#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</nav>#}
 
 </body>
 </html>
