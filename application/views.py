@@ -1,5 +1,7 @@
 import logging
 
+from application.models import Post
+
 logger = logging.getLogger(__name__)
 
 from django.shortcuts import render
@@ -30,9 +32,8 @@ def contact(request):
 
 
 def blog(request):
-    print("request is", request)
-
-    return render(request, 'blog.html', {'title': 'Blog - Trinadh Koya'})
+    posts = Post.objects.all()
+    return render(request, 'blog.html', {'title': 'Blog - Trinadh Koya', 'posts': posts})
 
 
 def resume(request):
