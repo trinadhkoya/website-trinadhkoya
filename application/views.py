@@ -8,7 +8,7 @@ from django.shortcuts import render
 # Create your views here.
 def index(request):
     logger.info('what is this', request)
-    return render(request, 'index.html', {'title': 'Welcome to Homepage - Trinadh Koya'})
+    return render(request, 'index.html', {'title': 'Welcome to HomePage - Trinadh Koya'})
 
 
 def about(request):
@@ -20,7 +20,7 @@ def about(request):
 def gallery(request):
     print("request is", request)
 
-    return render(request, 'gallery.html', {'title': 'Welcome to Homepage - Trinadh Koya'})
+    return render(request, 'gallery.html', {'title': 'Gallery - Trinadh Koya'})
 
 
 def contact(request):
