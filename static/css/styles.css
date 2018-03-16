@@ -236,7 +236,6 @@ Image credits: unsplash.com
     font-family: MyriadRegular, sans-serif;
 }
 
-
 p {
     margin: 0 0 10px;
     font-family: MyriadLight, sans-serif;
@@ -449,4 +448,9 @@ Licensed under MIT
 .company-brand-logo {
     height: 80px;
     width: 80px;
+}
+
+.influencer-logo {
+    height: 150px;
+    width: 150px;
 }
