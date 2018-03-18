@@ -62,8 +62,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Website/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+            <state relative-caret-position="217">
+              <caret line="98" column="36" lean-forward="true" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -83,7 +83,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.footer</find>
       <find>Eli</find>
       <find>Abou</find>
       <find>.menu_title</find>
@@ -113,6 +112,7 @@
       <find>https://image.ibb.co/g2J4sx/25395037_1660934813971404_5822097418547049566_o.jpg</find>
       <find>https://image.ibb.co/jBG2ec/18768597_1471889362875951_8435445480801085495_o.jpg</find>
       <find>this is the n</find>
+      <find>os.path.join(PROJECT_PATH, 'static'),</find>
     </findStrings>
     <replaceStrings>
       <replace>MyriadProSemiBold</replace>
@@ -725,8 +725,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+        <state relative-caret-position="217">
+          <caret line="98" column="36" lean-forward="true" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="36" />
           <folding />
         </state>
       </provider>
