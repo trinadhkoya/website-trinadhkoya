@@ -125,6 +125,8 @@ USE_TZ = True
 # Additional locations of static files
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # TEMPLATE_DIRS = (
 #     os.path.join(SETTINGS_PATH, "templates"),
