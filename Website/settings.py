@@ -25,7 +25,7 @@ SECRET_KEY = 'l8cm@zwoo3b+3hpckzqmzam1k0=m!&f8fqven&+r*ay8+zd)p='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -119,8 +119,13 @@ USE_L10N = True
 
 USE_TZ = True
 
+import dj_database_url
 
-# Static files (CSS, JavaScript, Images)
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+DATABASES['default'] = dj_database_url.config()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+
+STATTIC_DIRS = (
+    os.path.join(BASE_DIR, 'static')
+)
